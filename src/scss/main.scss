@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -15,12 +15,38 @@ body {
   background: white;
   padding: 70px;
   font-family: 'Poppins', sans-serif;
+  border:12px solid #171F3F;
+}
 
+.card {
+  background: #FFFFFF;
+  height: 150px;
+  width: 290px;
+}
+
+.card__background {
+  background: #F5F7FA;
+  color: #0593FB;
+}
+
+
+
+.footer {
+  margin-top: 70px;
+  background: #171F3F;
+  height: 300px;
+  color: white;
+  padding: 50px;
+  
+}
+
+.footer__mail {
+  margin-top:50px;
 }
 
 .header__photo {
-height: 120px;
-width: 120px;
+height: 150px;
+width: 150px;
 border: 6px solid #CBD2D9;
 border-radius: 50%;
 margin-bottom: 20px;
@@ -29,10 +55,11 @@ margin-bottom: 20px;
 .header__title {
 font-family: Poppins;
 font-style: normal;
-font-weight: 300;
+font-weight: 200;
 font-size: 40px;
-line-height: 56px;
+line-height: 50px;
 margin-bottom: 6px;
+color: #171F3F;
 }
 
 .header__paragraph {
@@ -41,25 +68,39 @@ font-weight: 300;
 font-size: 20px;
 line-height: 36px;
 margin-bottom: 60px;
+color: #171F3F;
 }
 
 .header__mail {
   margin-bottom: 100px;
   border-bottom: 1px solid blue;
+  color: #171F3F;
 }
+
+
+
+.project {
+  background: #F5F7FA;
+  color: #171F3F;
+  height: 400px;
+}  
 
 .skills__title {
   grid-column: 1 / span 2;
+  border-bottom:1px solid #F5F7FA;
+  margin-bottom:20px;
 }
 
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  color: #171F3F;
 }
 
-.footer {
-  background: #171F3F;
-  height: 200px;
-  color: white;
-  padding: 50px;
+.skills__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 12px;
 }
+
+

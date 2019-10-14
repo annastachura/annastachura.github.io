@@ -13,23 +13,25 @@
   <body>
     <header class ="header">
       <img class ="header__photo" src = "assets/img/photo.png">
-      <h1 class ="header__title">Hi there!👋 My name is Ania. I am learning how to be a Frontend developer and in my free time I am blogging about my travel </h1>
-      <p class ="header__paragraph">You may be interested in checking the list of my skills. Don't forget to have a glimpse at my projects. Currently I am looking for a new challanges so if you have one - contact me</p>
-      <div class ="header__mail">annas19914@gmail.com</div>
+      <b>
+        <h1 class ="header__title">Hi there!👋 My name is Ania. I am learning how to be a Frontend developer and in my free time I am blogging about my travel. </h1>
+      </b>
+      <p class ="header__paragraph">You may be interested in checking the list of <a class = "header__link" href = "#my-skills">my skills.</a> Don't forget to have a glimpse at <a class = "header__link" href = "#my-project"> my projects.</a> Currently I am looking for a new challanges so if you have one - <a class = "header__link" href ="#contact-me">contact me.</a></p>
+      <a class ="header__mail" href = "mailto:annas19914@gmail.com">annas19914@gmail.com</a>
     </header>
-    <section class = "skills">
+    <section id ="my-skills" class = "skills">
       <h2 class = "skills__title">My skills</h2>
       <h3 class = "skills__subtitle">Working knowledge </h3>
       <ul class = "skills__list">
-        <li>HTML 5</li>
-        <li>Flexbox</li>
-        <li>Markdown</li>
-        <li>JS:local storage</li>
-        <li>Figma</li>
-        <li>CSS grid</li>
-        <li>Forms</li>
-        <li>JS: DOM manipulations</li>
-        <li>SASS</li>
+        <li> <img src="assets/img/green-vector.png"> HTML 5 </li>
+        <li> <img src="assets/img/green-vector.png"> Flexbox</li>
+        <li> <img src="assets/img/green-vector.png"> Markdown</li>
+        <li> <img src="assets/img/green-vector.png"> JS:local storage</li>
+        <li> <img src="assets/img/green-vector.png"> Figma</li>
+        <li> <img src="assets/img/green-vector.png"> CSS grid</li>
+        <li> <img src="assets/img/green-vector.png"> Forms</li>
+        <li> <img src="assets/img/green-vector.png"> JS: DOM manipulations</li>
+        <li> <img src="assets/img/green-vector.png"> SASS</li>
       </ul>
 
       <h3 class = "skills__subtitle">Know something about</h3>
@@ -54,7 +56,7 @@
       </ul>
     </section>
 
-    <section class = "project">
+    <section id ="my-project" class = "project">
       <h2 class = "project__title">Recent project</h2>
       <p class = "project__paragraph">I started my frontend developer path in 2019. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far. </p>
       <section class= "card">
@@ -62,20 +64,20 @@
         <h3 class= "card__title">Hydrapp</h3>
         <p class= "card__paragraph">Mobilna aplikacja do mierzenia ilości wypitej wody</p>
         <div class = "card__background">
-        <a  class = "card__link" href ="#">Demo</a>
-        <a class = "card__link" href= "#">Github</a>
+        <a  class = "card__link" href ="#"> <img src ="assets/img/demo-icon.png">Demo</a>
+        <a class = "card__link" href= "#"> <img src ="assets/img/code-icon.png">Github</a>
         <div>
       </section>
     </section>
-    <footer class = "footer">
+    <footer id="contact-me" class = "footer">
       <h2 class = "footer__title">Contact me</h2>
       <p class = "footer__paragraph">I’m open for new opportunities. If you have one for me we should talk!</p>
       <div class = "footer__social">
-        <a  class = "footer__icon" href ="#"> <img src = "assets/img/FB-icon.png"> </a>
-        <a  class = "footer__icon" href ="#"> <img src = "assets/img/github-icon.png"></a>
-        <a  class = "footer__icon" href ="#"> <img src = "assets/img/Instagram-icon.png"></a>
+        <a  class = "footer__icon" href ="https://www.facebook.com/anna.stachura.33?ref=bookmarks"> <img src = "assets/img/FB-icon.png"> </a>
+        <a  class = "footer__icon" href ="https://github.com/annastachura"> <img src = "assets/img/github-icon.png"></a>
+        <a  class = "footer__icon" href ="https://www.instagram.com/annastachura91/"> <img src = "assets/img/Instagram-icon.png"></a>
       </div>
-      <div class = "footer__mail">annas19914@gmail.com</div>
+      <a class = "footer__mail" href ="mailto:annas19914@gmail.com">annas19914@gmail.com</a>
     </footer>
     <script src="js/main.js"></script>
   </body>
