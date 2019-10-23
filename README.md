@@ -1,4 +1,4 @@
-![Anna Stachura-personal website] (src/assets/img/anna stachura.png)
+![Anna Stachura-personal website] (src/assets/img/annastachura.png)
 
 # Anna Stachura personal website
 My personal website build during WTF course. 👌
