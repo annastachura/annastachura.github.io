@@ -1,21 +1,21 @@
-![Anna Stachura-personal website](src/assets/img/anna stachura.png)
+![Anna Stachura-personal website] (src/assets/img/anna stachura.png)
 
 # Anna Stachura personal website
 My personal website build during WTF course. 👌
 
 ## Tools & technologies I've used:
 
--Visual Studio Code
--SASS
--Fetch API
--Figma
--CSS
--Java Script
--HTML
+- Visual Studio Code
+- SASS
+- Fetch API
+- Figma
+- CSS
+- Java Script
+- HTML
 
 
 
-# build with wtf gulp starter
+## build with wtf gulp starter
 
 `npm install -g gulp-cli`
 
