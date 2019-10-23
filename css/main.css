@@ -514,7 +514,7 @@ body {
     height: 4px;
     display: block;
     border-radius: 8px;
-    margin-bottom: 1, 5rem;
+    margin-bottom: 1rem;
     background: #06C847; }
   .skills__subtitle--violet::before {
     content: '';
@@ -522,7 +522,7 @@ body {
     height: 4px;
     display: block;
     border-radius: 8px;
-    margin-bottom: 1, 5rem;
+    margin-bottom: 1rem;
     background: #653CAD; }
   .skills__subtitle--blue::before {
     content: '';
@@ -530,9 +530,9 @@ body {
     height: 4px;
     display: block;
     border-radius: 8px;
-    margin-bottom: 1, 5rem;
+    margin-bottom: 1rem;
     background: #2251CC; }
-  .skills__subtitle__list {
+  .skills__list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -543,9 +543,11 @@ body {
     margin: 28px;
     -webkit-column-gap: 24px;
        -moz-column-gap: 24px;
-            column-gap: 24px;
+            column-gap: 24px; }
+  .skills__item {
+    padding: 11px 0 11px 30px;
     position: relative; }
-    .skills__subtitle__list::before {
+    .skills__item::before {
       position: absolute;
       top: 10px;
       left: 0;
@@ -553,9 +555,10 @@ body {
       display: block;
       width: 18px;
       height: 18px;
-      background: url("../assets/img/green-vector.png"); }
-      .skills__list--violet .skills__subtitle__list::before {
-        background: #653CAD;
-        background: url("../assets/img/purple-vector.png"); }
+      background: url("../assets/img/green-vector.svg"); }
+      .skills__list--violet .skills__item::before {
+        background: url("../assets/img/purple-vector.svg"); }
+      .skills__list--blue .skills__item::before {
+        background: url("../assets/img/blue-vector.svg"); }
 
 /*# sourceMappingURL=main.css.map */
