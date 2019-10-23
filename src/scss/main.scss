@@ -222,7 +222,7 @@ body {
                 height: 4px;
                 display: block;
                 border-radius: 8px;
-                margin-bottom: 1, 5rem;
+                margin-bottom: 1rem;
                 background: #06C847;
             }
         }
@@ -233,7 +233,7 @@ body {
                 height: 4px;
                 display: block;
                 border-radius: 8px;
-                margin-bottom: 1, 5rem;
+                margin-bottom: 1rem;
                 background: #653CAD;
             }
         }
@@ -244,32 +244,37 @@ body {
                 height: 4px;
                 display: block;
                 border-radius: 8px;
-                margin-bottom: 1, 5rem;
+                margin-bottom: 1rem;
                 background: #2251CC;
             }
         }
-        &__list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            font-size: 12px;
-            list-style-type: none;
-            padding: 11px 0 11px 22px;
-            margin: 28px;
-            column-gap: 24px;
-            position: relative;
-            &::before {
-                position: absolute;
-                top: 10px;
-                left: 0;
-                content: '';
-                display: block;
-                width: 18px;
-                height: 18px;
-                background: url('../assets/img/green-vector.png');
-                .skills__list--violet & {
-                    background: #653CAD;
-                    background: url('../assets/img/purple-vector.png');
-                }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 12px;
+        list-style-type: none;
+        padding: 11px 0 11px 22px;
+        margin: 28px;
+        column-gap: 24px;
+    }
+    &__item {
+        padding: 11px 0 11px 30px;
+        position: relative;
+        &::before {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            content: '';
+            display: block;
+            width: 18px;
+            height: 18px;
+            background: url('../assets/img/green-vector.svg');
+            .skills__list--violet & {
+                background: url('../assets/img/purple-vector.svg');
+            }
+            .skills__list--blue & {
+                background: url('../assets/img/blue-vector.svg');
             }
         }
     }
