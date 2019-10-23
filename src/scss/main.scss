@@ -16,7 +16,7 @@ body {
     color: black;
     background: white;
     font-family: 'Poppins', sans-serif;
-    border: 12px solid #171F3F;
+    border: 10px solid #171F3F;
 }
 
 .card {
@@ -134,8 +134,8 @@ body {
 
 .header {
     padding: 70px;
-    max-width: 1184px;
-    padding: 112px, 0, 200px;
+    max-width: 1200px;
+    padding: 112px, 8px, 184px;
     margin: 0 auto;
     &__photo {
         height: 150px;
@@ -185,7 +185,7 @@ body {
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
-        max-width: 1184px;
+        max-width: 1200px;
     }
     &__paragraph {
         margin-bottom: 50px;
@@ -198,7 +198,7 @@ body {
 
 .skills {
     padding: 70px;
-    max-width: 1184px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;

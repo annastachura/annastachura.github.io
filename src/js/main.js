@@ -1,22 +1,32 @@
 "use strict";
 
-// service worker registration - remove if you're not going to use it
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
+const list = document.querySelector('.card-list--js');
 
-// place your code below
+fetch('https://api.github.com/users/annastachura/repos?sort-update')
+    .then(resp => resp.json())
+    .then(resp => {
+        const repos = resp;
+        for (const repo of repos) {
+            consile.log(repo);
+            list.innerHTML += `
 
-
-console.log(`Hello world!`);
-
-
+   <li class="card">
+                <div class="card__box">
+                    <img class="card__image" src="assets/img/github.png">
+                    <h3 class="card__title">${name}</h3>
+                    <p class="card__paragraph">${description}</p>
+                </div>
+                <div class="card__background">
+                    <a class="card__link" href="#" title="Demo:${name}.">Demo</a>
+                        <img src="assets/img/demo-icon.png">Demo</a>
+                    <a class="card__link" href="${html_url}" target="_blank" rel ="nofollow noreferer" title="Source code"${name}.">Github</a>
+                        <img src="assets/img/code-icon.png">Github</a>
+                </div>
+            </li>
+   `;
+        }
+    })
+    .catch(err => {
+        console.log(err);
+    })
