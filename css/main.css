@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -309,14 +310,252 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  color: black;
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  border: 10px solid #171F3F; }
+
+.card {
+  background: #FFFFFF;
+  height: 250px;
+  width: 290px;
+  font-size: 10px;
+  -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+          box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+  border-radius: 8px;
+  overflow: hidden; }
+  .card__background {
+    background: #F5F7FA;
+    color: #0593FB;
+    width: 290px;
+    height: 120px;
+    padding: 8px; }
+  .card__box {
+    padding: 24px; }
+  .card__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 32px; }
+  .card__paragraph {
+    font-style: normal;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px; }
+  .card__link {
+    color: #0593FB;
+    padding: 1rem 1, 5rem;
+    line-height: 32px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 14px;
+    line-height: 32px; }
+    .card__link + .card__link {
+      margin-left: 24px; }
+      .card__link + .card__link::after {
+        content: '';
+        height: 32px;
+        width: 2px;
+        background: #CBD2D9;
+        display: block;
+        position: absolute;
+        left: 0; }
+
+.card-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  grid-gap: 30px; }
+
+.footer {
+  background: #171F3F;
+  height: 300px;
+  color: white;
+  padding: 50px; }
+  .footer__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px; }
+    .footer__title::before {
+      content: '';
+      width: 80px;
+      height: 4px;
+      display: block;
+      background: #0593FB;
+      border-radius: 8px;
+      margin-bottom: 1, 5rem; }
+  .footer__paragraph {
+    position: absolute;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px; }
+  .footer__social {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer__icon {
+    text-decoration: none;
+    margin-bottom: 10px; }
+    .footer__icon + .footer__icon {
+      margin-left: 1, 5rem; }
+  .footer__mail {
+    color: #0593FB;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0593FB;
+    display: inline-block; }
+
+.header {
+  padding: 70px;
+  max-width: 1200px;
+  padding: 112px, 8px, 184px;
+  margin: 0 auto; }
+  .header__photo {
+    height: 150px;
+    width: 150px;
+    border: 6px solid #CBD2D9;
+    border-radius: 50%;
+    margin-bottom: 20px; }
+  .header__title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 6px;
+    color: #171F3F;
+    max-width: 780px; }
+  .header__paragraph {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 60px;
+    color: #52606D;
+    max-width: 780px; }
+  .header__mail {
+    color: #0593FB;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0593FB; }
+  .header__link {
+    color: #0593FB;
+    font-weight: 500; }
+
+.project {
+  background: #F5F7FA;
+  color: #171F3F;
+  padding: 70px; }
+  .project__title {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    max-width: 1200px; }
+  .project__paragraph {
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    max-width: 500px; }
+
+.skills {
+  padding: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  color: #171F3F;
+  margin-top: 10px;
+  margin-bottom: 100px; }
+  .skills__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    border-bottom: 1px solid #F5F7FA;
+    margin-bottom: 100px;
+    padding: 1; }
+  .skills__subtitle--green::before {
+    content: '';
+    width: 80px;
+    height: 4px;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 1, 5rem;
+    background: #06C847; }
+  .skills__subtitle--violet::before {
+    content: '';
+    width: 80px;
+    height: 4px;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 1, 5rem;
+    background: #653CAD; }
+  .skills__subtitle--blue::before {
+    content: '';
+    width: 80px;
+    height: 4px;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 1, 5rem;
+    background: #2251CC; }
+  .skills__subtitle__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    list-style-type: none;
+    padding: 11px 0 11px 22px;
+    margin: 28px;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+    position: relative; }
+    .skills__subtitle__list::before {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      background: url("../assets/img/green-vector.png"); }
+      .skills__list--violet .skills__subtitle__list::before {
+        background: #653CAD;
+        background: url("../assets/img/purple-vector.png"); }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,40 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Site title</title>
     <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
-
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
 
     <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>annastachura.github.io</h1>
+</head>
 
+<body>
+    <header class="header">
+        <img class="header__photo" src="assets/img/photo.png">
+        <h1 class="header__title">Hi there!👋 My name is Ania. I am learning how to be a Frontend developer and in my free time I am blogging about my travel. </h1>
+        <p class="header__paragraph">You may be interested in checking the list of
+            <a class="header__link" href="#my-skills">my skills.</a> Don't forget to have a glimpse at
+            <a class="header__link" href="#my-project"> my projects.</a> Currently I am looking for a new challanges so if you have one -
+            <a class="header__link" href="#contact-me">contact me.</a>
+        </p>
+        <a class="header__mail" href="mailto:annas19914@gmail.com">annas19914@gmail.com</a>
+    </header>
+    <section id="my-skills" class="skills">
+        <h2 class="skills__title">My skills</h2>
+        <h3 class="skills__subtitle skills__subtitle--green">Working knowledge </h3>
+        <ul class="skills__list skills__list--green">
+            <li class="skills__item">HTML 5</li>
+            <li class="skills__item">Flexbox</li>
+            <li class="skills__item">Markdown</li>
+            <li class="skills__item"> JS:local storage</li>
+            <li class="skills__item">Figma</li>
+            <li class="skills__item">CSS grid</li>
+            <li class="skills__item">Forms</li>
+            <li class="skills__item">JS: DOM manipulations</li>
+            <li class="skills__item">SASS</li>
+        </ul>
+
+        <h3 class="skills__subtitle skills__subtitle--violet">Know something about</h3>
+        <ul class="skills__list skills__list--violet">
+            <li class="skills__item">Java Script ES6 + features</li>
+            <li class="skills__item">CSS animations</li>
+            <li class="skills__item">Working with API</li>
+            <li class="skills__item">NPM scripts</li>
+            <li class="skills__item">Progressive web apps</li>
+            <li class="skills__item">Git</li>
+            <li class="skills__item">Websocets</li>
+        </ul>
+        <h3 class="skills__subtitle skills__subtitle--blue">Want to learn</h3>
+        <ul class="skills__list skills__list--blue">
+            <li class="skills__item">React JS</li>
+            <li class="skills__item">Node JS</li>
+            <li class="skills__item">Electron</li>
+            <li class="skills__item">Server side rendering</li>
+            <li class="skills__item">TypeScript</li>
+            <li class="skills__item">Gatsby</li>
+            <li class="skills__item">Websockets</li>
+        </ul>
+    </section>
+
+    <section id="my-project" class="project">
+        <h2 class="project__title">Recent project</h2>
+        <p class="project__paragraph">I started my frontend developer path in 2019. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far. </p>
+        <ul class="card-list card-list--js">
+            <!--<li class="card">
+                <div class="card__box">
+                    <img class="card__image" src="assets/img/github.png">
+                    <h3 class="card__title">Hydrapp</h3>
+                    <p class="card__paragraph">Mobilna aplikacja do mierzenia ilości wypitej wody</p>
+                </div>
+                <div class="card__background">
+                    <a class="card__link" href="#">
+                        <img src="assets/img/demo-icon.png">Demo</a>
+                    <a class="card__link" href="#">
+                        <img src="assets/img/code-icon.png">Github</a>
+                </div>
+            </li> -->
+
+        </ul>
+    </section>
+    <footer id="contact-me" class="footer">
+        <h2 class="footer__title">Contact me</h2>
+        <p class="footer__paragraph">I’m open for new opportunities. If you have one for me we should talk!</p>
+        <div class="footer__social">
+            <a class="footer__icon" href="https://www.facebook.com/anna.stachura.33?ref=bookmarks">
+                <img src="assets/img/FB-icon.png"> </a>
+            <a class="footer__icon" href="https://github.com/annastachura">
+                <img src="assets/img/github-icon.png">
+            </a>
+            <a class="footer__icon" href="https://www.instagram.com/annastachura91/">
+                <img src="assets/img/Instagram-icon.png">
+            </a>
+        </div>
+        <a class="footer__mail" href="mailto:annas19914@gmail.com">annas19914@gmail.com</a>
+    </footer>
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
