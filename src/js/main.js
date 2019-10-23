@@ -15,13 +15,13 @@ fetch('https://api.github.com/users/annastachura/repos?sort-update')
                 <div class="card__box">
                     <img class="card__image" src="assets/img/github.png">
                     <h3 class="card__title">${repo.name}</h3>
-                    <p class="card__paragraph">${repo.description}</p>
+                    <p class="card__paragraph">${repo.description} ${repo.homepage}</p>
                 </div>
                 <div class="card__background">
-                    <a class="card__link" href="#" title="Demo:${repo.name}.">Demo</a>
-                        <img src="assets/img/demo-icon.png">Demo</a>
-                    <a class="card__link" href="${html_url}" target="_blank" rel ="nofollow noreferer" title="Source code"${name}.">Github</a>
-                        <img src="assets/img/code-icon.png">Github</a>
+                    <a class="card__link" href="${repo.homepage}" target="_blank" rel ="nofollow noreferer" title="Demo:${repo.name}.">Demo</a>
+                        <img src="assets/img/demo-icon.png"></a>
+                    <a class="card__link" href="${repo.html_url}" target="_blank" rel ="nofollow noreferer" title="Source code"${repo.name}.">Github</a>
+                        <img src="assets/img/code-icon.png"></a>
                 </div>
             </li>
    `;
