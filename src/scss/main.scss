@@ -22,7 +22,6 @@ body {
 .card {
     background: #FFFFFF;
     height: 250px;
-    width: 290px;
     font-size: 10px;
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
     border-radius: 8px;
@@ -32,6 +31,7 @@ body {
         color: #0593FB;
         height: 120px;
         padding: 8px;
+        text-align: right;
     }
     &__box {
         padding: 24px;
@@ -93,6 +93,9 @@ body {
     list-style-type: none;
     column-gap: 24px;
     grid-gap: 30px;
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .footer {
@@ -148,7 +151,6 @@ body {
 
 .header {
     padding: 70px;
-    max-width: 1200px;
     padding: 112px, 8px, 184px;
     margin: 0 auto;
     &__photo {
@@ -212,10 +214,12 @@ body {
 
 .skills {
     padding: 70px;
-    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
     color: #171F3F;
     margin-top: 10px;
     margin-bottom: 100px;
