@@ -4,6 +4,9 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    @media (max-width: 640px) {
+        font-size: 10px;
+    }
 }
 
 *,
@@ -17,21 +20,24 @@ body {
     background: white;
     font-family: 'Poppins', sans-serif;
     border: 10px solid #171F3F;
+    @media (max-width: 768px) {
+        border: none;
+    }
 }
 
 .card {
     background: #FFFFFF;
-    height: 250px;
     max-width: 450px;
-    font-size: 0.6rem;
     box-shadow: 0px 0.4rem 1rem rgba(24, 41, 67, 0.09);
     border-radius: 0, 5rem;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__background {
         background: #F5F7FA;
         color: #0593FB;
-        height: 120px;
-        padding: 1.5rem;
+        padding: 1rem 3rem;
         text-align: right;
     }
     &__box {
@@ -47,8 +53,8 @@ body {
         font-style: normal;
         font-style: normal;
         font-weight: 300;
-        font-size: 0.75rem;
-        line-height: 1.5rem;
+        font-size: 12px;
+        line-height: 24px;
     }
     &__link {
         color: #0593FB;
@@ -59,16 +65,16 @@ body {
         &::before {
             content: '';
             display: block;
-            width: 1.5rem;
-            height: 1.5rem;
+            width: 24px;
+            height: 24px;
             margin-right: 0.5rem;
         }
         &+& {
             padding-left: 1.5rem;
             &::after {
                 content: '';
-                height: 32px;
-                width: 2px;
+                height: 2rem;
+                width: 2rem;
                 background: #CBD2D9;
                 display: block;
                 position: absolute;
@@ -102,7 +108,7 @@ body {
 
 .footer {
     background: #171F3F;
-    height: 300px;
+    min-height: 300px;
     color: white;
     padding: 3.1rem;
     &__title {
@@ -167,7 +173,7 @@ body {
         font-style: normal;
         font-weight: 400;
         font-size: 2.5rem;
-        line-height: 50px;
+        line-height: 3.1rem;
         margin-bottom: 0.4rem;
         color: #171F3F;
         max-width: 780px;
@@ -272,6 +278,9 @@ body {
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        @media (max-width: 640px) {
+            grid-template-columns: 1fr;
+        }
         font-size: 0.75rem;
         list-style-type: none;
         padding: 07rem 0 0.7rem 1.4rem;
