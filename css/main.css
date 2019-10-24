@@ -337,7 +337,6 @@ body {
   .card__background {
     background: #F5F7FA;
     color: #0593FB;
-    width: 290px;
     height: 120px;
     padding: 8px; }
   .card__box {
@@ -355,29 +354,39 @@ body {
     line-height: 24px; }
   .card__link {
     color: #0593FB;
-    padding: 1rem 1, 5rem;
     line-height: 32px;
+    height: 32px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
     font-style: normal;
     font-weight: 250;
     font-size: 14px;
     line-height: 32px; }
+    .card__link::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px; }
     .card__link + .card__link {
-      margin-left: 24px; }
+      padding-left: 24px; }
       .card__link + .card__link::after {
         content: '';
         height: 32px;
         width: 2px;
         background: #CBD2D9;
         display: block;
-        position: absolute;
-        left: 0; }
+        position: absolute; }
+      .card__link + .card__link--code ::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px; }
 
 .card-list {
   display: -ms-grid;
@@ -407,15 +416,16 @@ body {
       display: block;
       background: #0593FB;
       border-radius: 8px;
-      margin-bottom: 1, 5rem; }
+      margin-bottom: 1, 6rem; }
   .footer__paragraph {
-    position: absolute;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 36px; }
   .footer__social {
-    margin-bottom: 50px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -423,7 +433,9 @@ body {
     text-decoration: none;
     margin-bottom: 10px; }
     .footer__icon + .footer__icon {
-      margin-left: 1, 5rem; }
+      margin-left: 3 rem;
+      padding-right: 10px;
+      padding-left: 20px; }
   .footer__mail {
     color: #0593FB;
     font-weight: 500;
