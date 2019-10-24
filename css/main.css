@@ -312,6 +312,9 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth; }
+  @media (max-width: 640px) {
+    html {
+      font-size: 10px; } }
 
 *,
 *:before,
@@ -324,21 +327,31 @@ body {
   background: white;
   font-family: 'Poppins', sans-serif;
   border: 10px solid #171F3F; }
+  @media (max-width: 768px) {
+    body {
+      border: none; } }
 
 .card {
   background: #FFFFFF;
-  height: 250px;
   max-width: 450px;
-  font-size: 0.6rem;
   -webkit-box-shadow: 0px 0.4rem 1rem rgba(24, 41, 67, 0.09);
           box-shadow: 0px 0.4rem 1rem rgba(24, 41, 67, 0.09);
   border-radius: 0, 5rem;
-  overflow: hidden; }
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .card__background {
     background: #F5F7FA;
     color: #0593FB;
-    height: 120px;
-    padding: 1.5rem;
+    padding: 1rem 3rem;
     text-align: right; }
   .card__box {
     padding: 1.5rem; }
@@ -351,8 +364,8 @@ body {
     font-style: normal;
     font-style: normal;
     font-weight: 300;
-    font-size: 0.75rem;
-    line-height: 1.5rem; }
+    font-size: 12px;
+    line-height: 24px; }
   .card__link {
     color: #0593FB;
     line-height: 2rem;
@@ -370,15 +383,15 @@ body {
     .card__link::before {
       content: '';
       display: block;
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 24px;
+      height: 24px;
       margin-right: 0.5rem; }
     .card__link + .card__link {
       padding-left: 1.5rem; }
       .card__link + .card__link::after {
         content: '';
-        height: 32px;
-        width: 2px;
+        height: 2rem;
+        width: 2rem;
         background: #CBD2D9;
         display: block;
         position: absolute; }
@@ -408,7 +421,7 @@ body {
 
 .footer {
   background: #171F3F;
-  height: 300px;
+  min-height: 300px;
   color: white;
   padding: 3.1rem; }
   .footer__title {
@@ -466,7 +479,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 2.5rem;
-    line-height: 50px;
+    line-height: 3.1rem;
     margin-bottom: 0.4rem;
     color: #171F3F;
     max-width: 780px; }
@@ -565,6 +578,10 @@ body {
     -webkit-column-gap: 1.5rem;
        -moz-column-gap: 1.5rem;
             column-gap: 1.5rem; }
+    @media (max-width: 640px) {
+      .skills__list {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr; } }
   .skills__item {
     padding: 0.7rem 0 0.7rem 1.8rem;
     position: relative; }
