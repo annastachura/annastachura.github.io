@@ -30,7 +30,6 @@ body {
     &__background {
         background: #F5F7FA;
         color: #0593FB;
-        width: 290px;
         height: 120px;
         padding: 8px;
     }
@@ -52,13 +51,19 @@ body {
     }
     &__link {
         color: #0593FB;
-        padding: 1rem 1, 5rem;
         line-height: 32px;
+        height: 32px;
         display: inline-flex;
         align-items: center;
-        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
         &+& {
-            margin-left: 24px;
+            padding-left: 24px;
             &::after {
                 content: '';
                 height: 32px;
@@ -66,7 +71,13 @@ body {
                 background: #CBD2D9;
                 display: block;
                 position: absolute;
-                left: 0;
+            }
+            &--code ::before {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
             }
         }
         font-style: normal;
@@ -101,25 +112,28 @@ body {
             display: block;
             background: #0593FB;
             border-radius: 8px;
-            margin-bottom: 1, 5rem;
+            margin-bottom: 1, 6rem;
         }
     }
     &__paragraph {
-        position: absolute;
         font-style: normal;
         font-weight: 300;
         font-size: 20px;
         line-height: 36px;
     }
     &__social {
-        margin-bottom: 50px;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 20px;
         display: flex;
     }
     &__icon {
         text-decoration: none;
         margin-bottom: 10px;
         &+& {
-            margin-left: 1, 5rem;
+            margin-left: 3 rem;
+            padding-right: 10px;
+            padding-left: 20px;
         }
     }
     &__mail {
