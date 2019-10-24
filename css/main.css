@@ -328,7 +328,6 @@ body {
 .card {
   background: #FFFFFF;
   height: 250px;
-  width: 290px;
   font-size: 10px;
   -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
@@ -338,7 +337,8 @@ body {
     background: #F5F7FA;
     color: #0593FB;
     height: 120px;
-    padding: 8px; }
+    padding: 8px;
+    text-align: right; }
   .card__box {
     padding: 24px; }
   .card__title {
