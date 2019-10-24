@@ -398,6 +398,10 @@ body {
      -moz-column-gap: 24px;
           column-gap: 24px;
   grid-gap: 30px; }
+  @media (max-width: 640px) {
+    .card-list {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
 
 .footer {
   background: #171F3F;
@@ -446,7 +450,6 @@ body {
 
 .header {
   padding: 70px;
-  max-width: 1200px;
   padding: 112px, 8px, 184px;
   margin: 0 auto; }
   .header__photo {
@@ -501,7 +504,6 @@ body {
 
 .skills {
   padding: 70px;
-  max-width: 1200px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -510,6 +512,10 @@ body {
   color: #171F3F;
   margin-top: 10px;
   margin-bottom: 100px; }
+  @media (max-width: 640px) {
+    .skills {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
   .skills__title {
     font-style: normal;
     font-weight: 600;
